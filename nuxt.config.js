@@ -55,5 +55,15 @@ module.exports = {
             }
         ]
     },
+    /**
+     * Modules
+     */
+    modules: [
+        '@nuxtjs/axios',
+    ],
+
+    axios: {
+        // proxyHeaders: false
+    },
 }
 

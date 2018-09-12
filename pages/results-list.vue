@@ -4,16 +4,18 @@
             <FilterResult/>
         </div>
         <div class="main-body">
+            <CardsList/>
         </div>
     </div>
 </template>
 
 <script>
     import FilterResult from '~/components/FilterResults';
+    import CardsList from "~/components/CardsList";
 
     export default {
-        name: 'cards-list',
-        components: {FilterResult},
+        name: 'results-list',
+        components: {CardsList, FilterResult},
     };
 </script>
 
