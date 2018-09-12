@@ -1,5 +1,11 @@
 <template>
-    <FilterResult/>
+    <div>
+        <div class="left-bar">
+            <FilterResult/>
+        </div>
+        <div class="main-body">
+        </div>
+    </div>
 </template>
 
 <script>

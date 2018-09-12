@@ -1,14 +1,17 @@
 <template>
-    <b-container>
-        <b-row>
-            <b-col sm="3">
-                <label for="salary-range">Salary Range</label>
-            </b-col>
-            <b-col sm="9">
-                <b-form-input id="salary-range" :type="range"></b-form-input>
-            </b-col>
-        </b-row>
-    </b-container>
+    <div class="filters">
+        <form action="">
+            <div>
+                <label for="life-style"></label>
+                <select id="life-style" name="life_style">
+                    <option value="">Select</option>
+                    <option value="travel">Travel</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="food">Food</option>
+                </select>
+            </div>
+        </form>
+    </div>
 </template>
 
 <script>
