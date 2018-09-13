@@ -1,7 +1,9 @@
 <template>
     <div>
         <ul>
-            <li>{{ userId }}</li>
+            <li>User ID: {{ user.userId }}</li>
+            <li>Title: {{ user.title }}</li>
+            <li>Description: {{ user.body }}</li>
         </ul>
     </div>
 </template>
@@ -9,7 +11,7 @@
 <script>
     export default {
         name: "CardItem",
-        props: ['userId']
+        props: ['user']
     }
 </script>
 

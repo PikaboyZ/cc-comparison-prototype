@@ -16,7 +16,8 @@
 
 <script>
     export default {
-        name: 'FilterResults',
+        name: 'FilterForm',
+        props: ['userIds']
     };
 </script>
 
