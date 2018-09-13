@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 module.exports = {
     /*
     ** Headers of the page
@@ -44,22 +46,20 @@ module.exports = {
         extractCSS: true,
     },
     /**
-     * Routes
-     */
-    router: {
-        routes: [
-            {
-                name: 'results-list',
-                path: '/',
-                component: 'pages/results-list.vue'
-            }
-        ]
-    },
-    /**
      * Modules
      */
     modules: [
         '@nuxtjs/axios',
     ],
+    generate: {
+        routes: function () {
+            return axios.get('https://jsonplaceholder.typicode.com/posts')
+                .then((res) => {
+                    return res.data.map((post) => {
+                        return `/results/${post.id}`;
+                    });
+                })
+        }
+    }
 };
 

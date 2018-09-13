@@ -1,6 +1,10 @@
 <template>
     <div class="cards-list">
-        <CardItem v-for="(item, index) in items" :key="index" :user="item"/>
+        <ul>
+            <li v-for="(item, index) in items" :key="index">
+                <CardItem :user="item"/>
+            </li>
+        </ul>
     </div>
 </template>
 

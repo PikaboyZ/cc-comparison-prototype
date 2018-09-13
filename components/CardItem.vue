@@ -1,11 +1,5 @@
 <template>
-    <div>
-        <ul>
-            <li>User ID: {{ user.userId }}</li>
-            <li>Title: {{ user.title }}</li>
-            <li>Description: {{ user.body }}</li>
-        </ul>
-    </div>
+    <nuxt-link :to="`/results/${user.id}`">{{ user.title }}</nuxt-link>
 </template>
 
 <script>
