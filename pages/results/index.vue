@@ -9,10 +9,8 @@
 </template>
 
 <script>
-    import CardItem from "./CardItem";
-
+    import CardItem from "../../components/CardItem";
     export default {
-        name: "CardsList",
         components: {CardItem},
         props: ['items'],
     }
